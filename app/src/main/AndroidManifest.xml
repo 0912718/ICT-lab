@@ -40,13 +40,13 @@
         <activity android:name=".ListTest.ListTestActivity" />
 
         <!--fcm-->
-        <service android:name="ictlab.app1.MyFirebaseMessagingService">
+        <service android:name="MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
-        <service android:name="ictlab.app1.MyFirebaseInstanceIdService">
+        <service android:name="MyFirebaseInstanceIdService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>

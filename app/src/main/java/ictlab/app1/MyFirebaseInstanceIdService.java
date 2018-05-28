@@ -1,6 +1,11 @@
 package ictlab.app1;
 
-public class MyFirebaseInstanceIdService extends com.google.firebase.iid.FirebaseInstanceIdService {
+import android.util.Log;
+
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.FirebaseInstanceIdService;
+
+public class MyFirebaseInstanceIdService extends FirebaseInstanceIdService {
 
     private static final String TAG = "MyFirebaseIIDService";
 
@@ -8,10 +13,10 @@ public class MyFirebaseInstanceIdService extends com.google.firebase.iid.Firebas
     public void onTokenRefresh() {
 
         //Getting registration token
-        //String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
 
         //Displaying token in logcat
-        //Log.e(TAG, "Refreshed token: " + refreshedToken);
+        Log.d(TAG, "Refreshed token: " + refreshedToken);
 
     }
 
