@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "196047955215",
+    "firebase_url": "https://myapp-ab19e.firebaseio.com",
+    "project_id": "myapp-ab19e",
+    "storage_bucket": "myapp-ab19e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196047955215:android:f464943d19620ea3",
+        "android_client_info": {
+          "package_name": "ictlab.app1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196047955215-ug7dgs8cb3ciops72b88s4gpf3dl5n9j.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "196047955215-ug7dgs8cb3ciops72b88s4gpf3dl5n9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSJ2LXBhixGY1d373mDvO-8VZ8vR6scKI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
