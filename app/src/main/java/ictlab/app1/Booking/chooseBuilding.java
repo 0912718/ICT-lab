@@ -1,8 +1,8 @@
 package ictlab.app1.Booking;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
@@ -13,6 +13,7 @@ import java.util.List;
 
 import ictlab.app1.ListTest.ListTestActivity;
 import ictlab.app1.R;
+import ictlab.app1.SendEmail;
 
 public class chooseBuilding extends AppCompatActivity {
 
@@ -23,6 +24,7 @@ public class chooseBuilding extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.choosebuilding);
         expandableListView =  findViewById(R.id.expandableListView);
@@ -34,6 +36,8 @@ public class chooseBuilding extends AppCompatActivity {
 
             @Override
             public void onGroupExpand(int groupPosition) {
+                SendEmail sm = new SendEmail("0909391@hr.nl", "Classroom reservation", "Uw boeking is verwijderd");
+                sm.execute();
                 Toast.makeText(getApplicationContext(),
                         expandableListTitle.get(groupPosition) + " List Expanded.",
                         Toast.LENGTH_SHORT).show();
